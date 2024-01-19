@@ -27,7 +27,7 @@ module Ronin
       #
       # ## Usage
       #
-      #     ronin archive [option] [FILE ...]
+      #     ronin archive [option] FILE ...
       #
       # ## Options
       #
@@ -40,7 +40,7 @@ module Ronin
       #
       class Archive < FileProcessorCommand
 
-        usage '[options] [FILE ...]'
+        usage '[options] FILE ...'
 
         option :format, short: '-f',
                         value: {
